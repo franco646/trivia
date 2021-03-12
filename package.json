@@ -1,0 +1,43 @@
+{
+  "name": "trivia",
+  "version": "1.0.0",
+  "description": "juego de preguntas y respuestas",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 3000",
+    "start-test-server": "cross-env NODE_ENV=test node bin/www",
+    "start-dev-server": "nodemon bin/www",
+    "ci": "start-server-and-test start-test-server 3000 test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franco646/trivia.git"
+  },
+  "author": "franco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franco646/trivia/issues"
+  },
+  "homepage": "https://github.com/franco646/trivia#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.19"
+  },
+  "devDependencies": {
+    "chai": "^4.3.3",
+    "chai-http": "^4.3.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-chai-friendly": "^0.6.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-mocha": "^8.1.0",
+    "mocha": "^8.3.1",
+    "mongodb-memory-server": "^6.9.6",
+    "sinon": "^9.2.4",
+    "start-server-and-test": "^1.12.0",
+    "supertest": "^6.1.3"
+  }
+}
