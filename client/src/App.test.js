@@ -7,7 +7,7 @@ import { setupServer } from "msw/node";
 
 import App from "./App";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = 'http://localhost:8080';
 const questions = [
   {
     answers: [
