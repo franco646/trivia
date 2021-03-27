@@ -7,6 +7,13 @@ import PositionsTable from "./pages/PositionsTable/PositionsTable";
 
 import "./App.scss";
 
+let BASE_URL;
+if (process.env.NODE_ENV === 'production') {
+  BASE_URL = '';
+} else if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test') {
+  BASE_URL = 'http://localhost:8080';
+}
+
 const App = () => {
   const [userName, setUserName] = useState(null);
   const [category, setCategory] = useState(null);
@@ -25,7 +32,6 @@ const App = () => {
   const tableHeaders = ["Posición", "Nombre", "Preguntas correctas"];
   const numberOfQuestions = 20;
   const timeLimit = 15; // time in seconds
-  const BASE_URL = "http://localhost:3000";
 
   const playHandler = async (selectedName, selectedCategory) => {
     const response = await fetch(
