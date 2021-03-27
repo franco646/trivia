@@ -1,0 +1,40 @@
+.Card {
+  margin-inline: 9%;
+  border: 8px solid var(--purple-secondary);
+  min-height: 75vh;
+  text-align: center;
+  display: block;
+  align-items: center;
+  top: 11%;
+
+  .CardContent {
+    .Tittle {
+      font-size: 2.5rem;
+      font-family: Bungle_Shade;
+      color: var(--purple-primary);
+    }
+
+    .Table {
+      th {
+        font-size: 1.3rem;
+        font-family: Bungle;
+        color: var(--purple-primary);
+      }
+
+      td {
+        font-family: Bungle;
+        color: var(--purple-primary);
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .Card {
+    .CardContent {
+      .Tittle {
+        font-size: 6vw;
+      }
+    }
+  }
+}
