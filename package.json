@@ -27,6 +27,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "mongodb-memory-server": "^6.9.6",
     "mongoose": "^5.11.19"
   },
   "devDependencies": {
@@ -40,7 +41,6 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-mocha": "^8.1.0",
     "mocha": "^8.3.1",
-    "mongodb-memory-server": "^6.9.6",
     "sinon": "^9.2.4",
     "start-server-and-test": "^1.12.0"
   }
