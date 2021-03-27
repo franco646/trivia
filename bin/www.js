@@ -5,7 +5,7 @@ const app = require('../app');
 
 const mongoServer = new MongoMemoryServer();
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5000;
 const env = process.env.NODE_ENV || 'development';
 
 const connect = async () => {
@@ -16,8 +16,8 @@ const connect = async () => {
       reconnectTries: Number.MAX_VALUE,
       reconnectInterval: 1000,
     });
-    app.listen(3000, () => {
-      console.log('server running in port 3000');
+    app.listen(5000, () => {
+      console.log('server running in port 5000');
     });
   } else {
     mongoose
