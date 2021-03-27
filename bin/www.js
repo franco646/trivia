@@ -16,7 +16,9 @@ const connect = async () => {
       reconnectTries: Number.MAX_VALUE,
       reconnectInterval: 1000,
     });
-    app.listen(3000);
+    app.listen(3000, () => {
+      console.log('server running in port 3000');
+    });
   } else {
     mongoose
       .connect(process.env.MONGOOSE_URI, {
