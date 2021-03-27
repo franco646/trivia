@@ -3,13 +3,12 @@ const mongoose = require('mongoose');
 const { MongoMemoryServer } = require('mongodb-memory-server');
 const app = require('../app');
 
-const mongoServer = new MongoMemoryServer();
-
 const port = process.env.PORT || 5000;
 const env = process.env.NODE_ENV || 'development';
 
 const connect = async () => {
   if (env === 'test') {
+    const mongoServer = new MongoMemoryServer();
     const mongoUri = await mongoServer.getUri();
     await mongoose.connect(mongoUri, {
       autoReconnect: true,
