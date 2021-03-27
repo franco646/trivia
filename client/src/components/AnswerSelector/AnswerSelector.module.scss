@@ -1,0 +1,14 @@
+.Box {
+  background-color: var(--purple-primary) !important;
+  color: var(--yellow-primary) !important;
+  margin: 0.8vw;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-family: Bungle;
+}
+
+.Box:hover {
+  cursor: pointer;
+  background-color: var(--purple-secondary) !important;
+  box-shadow: 0px 0px 3px var(--purple-primary);
+}
