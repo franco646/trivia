@@ -1,0 +1,64 @@
+.Card {
+  margin-inline: 9%;
+  border: 8px solid var(--purple-secondary);
+  height: 75vh;
+  text-align: center;
+  display: block;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .CardContent {
+    position: absolute;
+    width: 100%;
+    padding: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .Tittle {
+      margin-top: 25vh;
+      margin-block: 0%;
+      margin-inline: auto;
+      display: inline-block;
+      line-height: 11vw;
+      font-family: Bungle_Shade;
+      color: var(--purple-primary);
+      font-size: 11vw;
+    }
+
+    .Subtittle {
+      font-family: Bungle;
+      color: var(--purple-primary);
+      font-size: 2vw;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+
+    .AnswerSelector {
+      margin-inline: 5vw;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .Card {
+    margin-inline: 1%;
+
+    .CardContent {
+      .Tittle {
+        font-size: 18vw;
+      }
+
+      .Subtittle {
+        font-size: 4vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .Card {
+    height: 60vh;
+  }
+}
