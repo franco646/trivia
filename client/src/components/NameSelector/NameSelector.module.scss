@@ -1,0 +1,43 @@
+.NameSelector {
+  text-align: center;
+  position: relative;
+
+  input {
+    width: 60%;
+    margin-inline: auto;
+    display: block;
+    text-align: center;
+    padding: 0% !important;
+  }
+
+  button {
+    font-size: 2vw;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .NameSelector {
+    input {
+      width: 80%;
+    }
+
+    button {
+      font-size: 4vw;
+      margin: 10px;
+    }
+  }
+}
+
+@media (max-width: 328px) {
+  .NameSelector {
+    input {
+      width: 100%;
+    }
+
+    button {
+      font-size: 6vw;
+      margin: 10px;
+    }
+  }
+}
