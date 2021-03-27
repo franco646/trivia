@@ -1,0 +1,40 @@
+body {
+  background-color: var(--purple-primary);
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "Bungle_Shade";
+  src: local("Bungle_Shade"),
+    url("./fonts/Bungee_Shade/BungeeShade-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bungee_Inline";
+  src: local("Bungee_Inline"),
+    url("./fonts/Bungee_Inline/BungeeInline-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bungle";
+  src: local("Bungle"),
+    url("./fonts/Bungee/Bungee-Regular.ttf") format("truetype");
+}
