@@ -27,12 +27,12 @@ exports.postPlayer = async (req, res, next) => {
   } = req.body;
 
   try {
-    await Player.create({
+    const player = await Player.create({
       name,
       correctAnswers,
       category,
     });
-    return res.status(200).end();
+    return res.status(200).json({ player }).end();
   } catch (error) {
     if (!error.statusCode) {
       error.statusCode = 500;
