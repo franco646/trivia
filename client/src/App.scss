@@ -1,0 +1,37 @@
+@charset "utf-8";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/minireset.sass";
+
+:root {
+  --purple-primary: #3a0d8f;
+  --purple-secondary: #6727db;
+  --yellow-primary: #dbd227;
+  --yellow-secondary: #8f8700;
+}
+
+$card-background-color: var(--yellow-primary);
+$card-radius: 0.9rem;
+$card-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+$progress-border-radius: 0.9rem;
+$progress-value-background-color: var(--purple-primary);
+
+$input-border-color: var(--purple-primary);
+$input-focus-border-color: var(--purple-secondary);
+
+$table-background-color: transparent;
+$table-row-active-color: var(--purple-primary);
+$table-row-active-background-color: var(--purple-secondary);
+$table-cell-border: 1px solid var(--purple-secondary);
+
+$box-background-color: transparent;
+$box-shadow: none;
+
+@import "../node_modules/bulma/sass/components/card.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
+@import "../node_modules/bulma/sass/elements/box.sass";
+@import "../node_modules/bulma/sass/elements/progress.sass";
+@import "../node_modules/bulma/sass/elements/table.sass";
