@@ -2,6 +2,7 @@ require('dotenv').config({ path: `${__dirname}/.env` });
 
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const playersRoutes = require('./routes/player');
 const questionsRoutes = require('./routes/question');
@@ -16,6 +17,7 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use(express.static(path.join(__dirname, 'client', 'build')));
 app.use(bodyParser.json());
 
 app.get('/', (_req, res, next) => {
@@ -31,6 +33,10 @@ app.use((error, _req, res, _next) => {
   const statusError = error.statusCode || 500;
   const { message } = error;
   res.status(statusError).json({ message });
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
 
 module.exports = app;
