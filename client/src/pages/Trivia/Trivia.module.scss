@@ -1,0 +1,75 @@
+.Card {
+  margin-inline: 9%;
+  border: 8px solid var(--purple-secondary);
+  height: 75vh;
+  text-align: center;
+  display: block;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .ProgressBar {
+    width: 100%;
+    margin: 0px !important;
+  }
+
+  .Scoreboard {
+    margin-right: 3%;
+    margin-top: 3%;
+    font-family: Bungle;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    text-align: right;
+  }
+
+  .CardContent {
+    position: absolute;
+    width: 100%;
+    padding: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .QuestionCard {
+      padding: 0%;
+      width: 95%;
+      margin: auto;
+      display: inline-block;
+      background-color: var(--purple-secondary);
+      border: 5px solid var(--purple-primary);
+
+      .QuestionText {
+        color: var(--yellow-primary);
+        font-family: Bungle;
+        font-size: 1.5rem;
+        line-height: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Card {
+    margin-inline: 1%;
+    height: 90vh;
+
+    .Scoreboard {
+      margin-top: 5px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .Card {
+    .Scoreboard {
+      font-size: 1.2rem;
+    }
+    .CardContent {
+      .QuestionCard {
+        .QuestionText {
+          font-size: 1rem;
+          line-height: 1.2rem;
+        }
+      }
+    }
+  }
+}
