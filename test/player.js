@@ -7,7 +7,7 @@ const Player = require('../models/player');
 const playerController = require('../controllers/player');
 
 chai.use(chaiHttp);
-const url = 'http://localhost:3000';
+const url = 'http://localhost:5000';
 
 describe('Player Controller', function () {
   describe('POST - /player', function () {
