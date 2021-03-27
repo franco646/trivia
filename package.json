@@ -7,7 +7,7 @@
     "test": "mocha --timeout 3000",
     "start-test-server": "cross-env NODE_ENV=test node bin/www",
     "start-dev-server": "nodemon bin/www",
-    "ci": "start-server-and-test start-test-server 3000 test"
+    "ci": "start-server-and-test start-test-server 5000 test"
   },
   "repository": {
     "type": "git",
