@@ -7,7 +7,7 @@ const Question = require('../models/question');
 const questionController = require('../controllers/question');
 
 chai.use(chaiHttp);
-const url = 'http://localhost:3000';
+const url = 'http://localhost:5000';
 
 describe('Question Controller', function () {
   describe('GET - /questions/:category', function () {
