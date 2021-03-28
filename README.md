@@ -46,9 +46,9 @@ http://localhost:3000/
 * [Body-parser](https://www.npmjs.com/package/body-parser) - Parsing middleware
 * [mongodb-memory-server](https://github.com/nodkz/mongodb-memory-server) - Base de datos local para tests
 ##### Frontend:
-* [Bulma.io](https://bulma.io/) - Libreria de css
+* [Bulma.io](https://bulma.io/) - Librería de css
 * [Node-sass](https://www.npmjs.com/package/node-sass) - Compilador de archivos .scss
-* [prop-types](https://www.npmjs.com/package/prop-types) - Verificacion de tipos en tiempo real
+* [prop-types](https://www.npmjs.com/package/prop-types) - Verificación de tipos en tiempo real
 
 ## Tests ⚙️
 ### Los test fueron construidos con
@@ -56,7 +56,7 @@ http://localhost:3000/
 * [Mocha](https://mochajs.org/)
 * [Chai](https://www.chaijs.com/)
 * [Sinon](https://sinonjs.org/)
-##### frontend:
+##### Frontend:
 * [Jest](https://jestjs.io/)
 * [React Testing Library](https://testing-library.com/)
 
