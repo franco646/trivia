@@ -20,7 +20,7 @@ const connect = async () => {
     });
   } else {
     mongoose
-      .connect(process.env.MONGOOSE_URI, {
+      .connect(process.env.MONGOOSE_URI || 'mongodb+srv://usuarioDemo:contraseña@cluster0.n1u3z.mongodb.net/trivia?retryWrites=true&w=majority', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
       })
